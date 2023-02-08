@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=""UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="Stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd9efbbab3.js" crossorigin="anonymous"></script>
+
+</head>
+<!----  https://fontawesome.com/kits for Icons ----->
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Information Technology and Cyber Security</p>
+            <h1> Hi, I'm <span>Laurel</span></h1>
+        </div>
+    </div>
+</div>
+
+<!-------------about------------------->
+
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <!---<p>write something here later</p>--->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills"> 
+                    <ul>
+                        <li><span>Information Technology</span><br>Database Concepts and Design, Operating Systems, Hardware, Networks, SQL, Cisco, Cybersecurity</li>
+                        <li><span>Business</span><br>Marketing, Management, Communication, Microsoft Office, Google Suite</li>
+                        <li><span>Computer Programming</span><br>Fundamental SQL, Java, JavaScript, C++, Python, HTML, css</li>
+                        <li><span>Personal Abilities</span><br>Organization, Adaptability, Resourceful, Attention to Detail, Critical thinking, Computer Proficiency, Proficient in solo and group work</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education"> 
+                    <ul>
+                        <li><span>B.S. in Information Technology/Infrastructure</span><br>A degree in the business college so the coursework included finance, accounting, and management alongside
+                                                                                            the Information Technology and Cyber security degree. (August 2020- December 2023(Expected))</li>
+                        <li><span>Accelerated M.S. in Cybersecurity</span><br>A masters degree that uses dual enrollment with various bachelor's classes to accelerate the degrees. (Jan 2023- Dec 2024(Expected))</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience"> 
+                    <ul>
+                        <li><span>General Assistant</span><br>Assisted with various troubleshooting, cleaning, packaging, Security, and Data entry tasks on a new business. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------------------------SERVICES---------------------------------   --> 
+
+
+
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-bug-slash"></i>
+                <h2>Information Technology</h2>
+                <p>I am proficient in troubleshooting hardware and software, if I cannot find a solution on my own I can be very resourceful to find a solution. 
+                    Modeling databases, Data Entry, and configuring Networks. 
+                </p>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-user-secret"></i>
+                <h2> Cyber Security </h2>
+                <p>Protection of a system alongside the protection of the software and data alongside it</p>
+                <!--------<a href="#">Learn more</a>------>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--------------------------------PORTFOLIO--------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Grade Averaging</h3>
+                    <p>Takes the input of a name, course, and grades to return the average and print all responses into a output.txt file</p>
+                    <a href="https://replit.com/@Laurelpev/Programming-Project-1-P#Main.java"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>File Sorting</h3>
+                    <p>Takes the file name and converts the list by sorting it alphabetically and rewriting the new list into a file</p>
+                    <a href="https://replit.com/@Laurelpev/NamesArray-Project#Main.java"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Database Modeling</h3>
+                    <p>A visual model depicting interactions between different data groups.</p>
+                    <a href="images/Work-2-Assignment.docx"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!---------------------CONTACT-------------------------->
+<div id="contact">
+    <div class="contain">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>pevahouselaurel@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>(417)312-0840</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/laurelpevahouse/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Pevahouse_Resume_2.docx" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name"  placeholder="Your Name" required>
+                    <input type="email" name="Email"    placeholder="Your email" required>
+                    <textarea name="Message"  rows="6"  placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit </button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------------Javascript----->
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx5_k816_oGMsZ7jURf9G_5pLqraFY_0JnFNS388DtHBEHExWIRvRmFBk3AJPw2LIdT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
