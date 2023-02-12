@@ -23,7 +23,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Images/dumn.png);
+    background-image: url(images/dumn.png);
     background-size: cover;
     background-position: center;
 }    
@@ -334,9 +334,7 @@ form btn2{
 
 
 /* hide menu icons */
-nav .fa-solid{
-    display: none;
-}
+
 nav .fa-sharp{
     display: none;
 }
@@ -354,10 +352,6 @@ nav .fa-sharp{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fa-solid{
-        display: block;
-        font-size: 25px;
-    }
     nav .fa-sharp{
         display: block;
         font-size: 25px;
@@ -366,7 +360,7 @@ nav .fa-sharp{
         background: #b392ac;
         position: fixed;
         top: 0;
-        right: -200;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
